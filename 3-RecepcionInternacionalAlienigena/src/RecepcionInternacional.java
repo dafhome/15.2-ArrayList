@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import javax.sound.midi.Soundbank;
-
 public class RecepcionInternacional {
     public static void main(String[] args) throws Exception {
         // 3- CRUD: recepción internacional... y universal!
@@ -38,15 +36,15 @@ public class RecepcionInternacional {
             elegidos.add(scan.nextLine().toUpperCase());
             System.out.println();
         }
-        System.out.println(
-                "----------------------------------------------------------------------------------------------------");
+        System.out.println("---------------------ULTIMA HORA--------------------");
+
         System.out.println("La primera lista de elegid@s es:");
         for (String persona : elegidos) {
             System.out.print(persona + " ");
         }
         System.out.println();
         System.out.println();
-        
+
         System.out.println(
                 "Lamentablemente la segunda y tercera persona no podrán presentarse, estos puestos se han quedado libres");
         System.out.println();
@@ -57,8 +55,8 @@ public class RecepcionInternacional {
         elegidos.set(2, "LIBRE");
 
         System.out.println();
-        System.out.println(
-                "----------------------------------------------------------------------------------------------------");
+        System.out.println();
+        System.out.println("---------------------ULTIMA HORA--------------------");
         System.out.println("La lista de elegid@s actualizada es:");
         for (int i = 0; i < elegidos.size(); i++) {
             System.out.print(elegidos.get(i) + " ");
@@ -67,21 +65,19 @@ public class RecepcionInternacional {
         System.out.println();
         System.out.println("---------------------ULTIMA HORA--------------------");
         System.out.println(elegidos.get(4) + " no se encuentra bien pero también tiene a alguien para recomendar.");
-        System.out.println(elegidos.get(4)+" indicanos quien es tan afortunad@:");
+        System.out.println(elegidos.get(4) + " indicanos quien es tan afortunad@:");
         elegidos.set(4, scan.nextLine().toUpperCase());
         System.out.println();
 
         System.out.print("Lista actualizada: ");
         for (String persona : elegidos) {
-            System.out.print(persona+" ");
+            System.out.print(persona + " ");
         }
 
         System.out.println();
         System.out.println("---------------------ULTIMA HORA--------------------");
         System.out.println("Cuando pensabamos que ya teniamos la lista cerrada con una vacante ha aparecido:");
         elegidos.set(2, scan.nextLine().toUpperCase());
-
-
 
         System.out.println();
         System.out.println("---------------------ULTIMA HORA--------------------");
@@ -90,8 +86,7 @@ public class RecepcionInternacional {
         for (String persona : elegidos) {
             System.out.println(persona);
         }
-        
-        
+
         scan.close();
 
     }
