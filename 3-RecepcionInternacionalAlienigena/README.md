@@ -1,9 +1,3 @@
-# 15.2-ArrayList
- 
-1- Rellenar ArrayList y mostrar resultado:
-Crear un arraylist mediante un bucle con los números del 20 al 50. Mostrar después todo el contenido del arraylist final.
-2- Preguntar al usuario elementos típicos de la fiesta de Sant Jordi.
-Para acabar, escribir 'salir'. Al final, mostrar todos los elementos introducidos por el usuario.
 3- CRUD: recepción internacional... y universal!
 Te han encargado organizar la recepción oficial para el primer contacto extraterrestre, en la montaña de Montserrat.
 Solo unos pocos en el mundo pueden asistir. ¿A quién enviarías? De momento la lista sólo puede ser de cinco elegid@s.
