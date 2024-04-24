@@ -52,7 +52,8 @@ public class RecepcionInternacional {
         System.out.println(elegidos.get(1) + " tiene a alguien para que esté en su lugar.");
         System.out.println(elegidos.get(1) + " indicanos quien es tan afortunad@:");
         elegidos.set(1, scan.nextLine().toUpperCase());
-        elegidos.set(2, "LIBRE");
+        // elegidos.set(2, "LIBRE");
+        elegidos.remove(2);
 
         System.out.println();
         System.out.println();
@@ -64,9 +65,15 @@ public class RecepcionInternacional {
         System.out.println();
         System.out.println();
         System.out.println("---------------------ULTIMA HORA--------------------");
-        System.out.println(elegidos.get(4) + " no se encuentra bien pero también tiene a alguien para recomendar.");
-        System.out.println(elegidos.get(4) + " indicanos quien es tan afortunad@:");
-        elegidos.set(4, scan.nextLine().toUpperCase());
+        System.out.println(elegidos.get(elegidos.size()-1) + " no se encuentra bien pero también tiene a alguien para recomendar.");
+        // System.out.println(elegidos.get(4) + " no se encuentra bien pero también tiene a alguien para recomendar.");
+
+        System.out.println(elegidos.get(elegidos.size()-1) + " indicanos quien es tan afortunad@:");
+        // System.out.println(elegidos.get(4) + " indicanos quien es tan afortunad@:");
+
+        elegidos.set(elegidos.size()-1, scan.nextLine().toUpperCase());
+        // elegidos.set(4, scan.nextLine().toUpperCase());
+
         System.out.println();
 
         System.out.print("Lista actualizada: ");
@@ -76,8 +83,9 @@ public class RecepcionInternacional {
 
         System.out.println();
         System.out.println("---------------------ULTIMA HORA--------------------");
-        System.out.println("Cuando pensabamos que ya teniamos la lista cerrada con una vacante ha aparecido:");
-        elegidos.set(2, scan.nextLine().toUpperCase());
+        System.out.println("Cuando pensabamos que ya teniamos la lista cerrada con una vacante en la posicion 3 ha aparecido:");
+        // elegidos.set(2, scan.nextLine().toUpperCase());
+        elegidos.add(2,scan.nextLine().toUpperCase());
 
         System.out.println();
         System.out.println("---------------------ULTIMA HORA--------------------");
